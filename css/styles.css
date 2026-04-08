@@ -6,6 +6,33 @@ body {
 
 ul {
     list-style-type: none;
+    margin-block: 0;
+    padding-left: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-block: 0;
+}
+
+address {
+    font-style: normal;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
 }
 
 a {
@@ -13,8 +40,28 @@ a {
     text-decoration: none;
 }
 
+.container {
+    width: 1440px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin: 0 auto;
+}
+
+/*---------------Header---------------*/
+
 .header {
     background: #fff;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
 }
 
 .header-logo {
@@ -25,6 +72,7 @@ a {
         text-transform: uppercase;
         color: #2e2f42;
         font-family: "Raleway", sans-serif;
+        margin-right: 76px;
 }
 
 .header-logo-span {
@@ -53,6 +101,12 @@ a {
         font-style: normal;
 }
 
+.header-list {
+    display: flex;
+    /*justify-content: center;*/
+    gap: 40px;
+}
+
 /*.header-list {
     font-weight: 500;
         font-size: 16px;
@@ -78,6 +132,14 @@ a {
         font-style: normal;
 }
 
+.address-list {
+    display: flex;
+    gap: 40px;
+    /*margin-left: auto;*/
+}
+
+/*---------------Main Tittle---------------*/
+
 .main-title {
     background: #2e2f42;
 }
@@ -89,6 +151,12 @@ a {
         letter-spacing: 0.02em;
         text-align: center;
         color: #fff;
+        display: flex;
+        display: block;
+        margin: 0 auto;
+        max-width: 496px;
+        /*min-width: 496px;*/
+        margin-bottom: 28px;
 }
 
 .main-title-button {
@@ -98,13 +166,34 @@ a {
         letter-spacing: 0.04em;
         color: #fff;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-            background: #4d5ae5;
-            cursor: pointer;
+        background: #4d5ae5;
+        cursor: pointer;
+        border-radius: 4px;
+        min-width: 169px;
+        padding: 16px 32px;
+        border: none;
+        display: block;
+        margin: 0 auto;
 }
 
 .main-title-button:hover,
 .main-title-button:focus {
     background-color: #404bbf;
+}
+
+/*---------------Our Features---------------*/
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .features-subtitle {
@@ -123,6 +212,8 @@ a {
         color: #434455;
 }
 
+/*---------------Our Team---------------*/
+
 .team {
     background: #f4f4fd;
 }
@@ -139,6 +230,16 @@ a {
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
+}
+
+.team-list {
+    display: flex;
+    gap: 24px;
+}
+
+.team-link {
+    width: calc((100% - 24px * 3) / 4);
+    padding: 0 0 120px 0;
 }
 
 .team-subtitle {
@@ -159,6 +260,8 @@ a {
         color: #434455;
 }
 
+/*---------------Our Portfolio---------------*/
+
 .portfolio-title {
     font-weight: 700;
         font-size: 36px;
@@ -166,6 +269,16 @@ a {
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 19px;
+}
+
+.portfolio-link {
+    width: calc((100% - 19px * 2) / 3);
 }
 
 .portfolio-subtitle {
@@ -183,6 +296,8 @@ a {
         letter-spacing: 0.02em;
         color: #434455;
 }
+
+/*---------------Footer---------------*/
 
 .footer {
     background: #2e2f42;
@@ -213,4 +328,11 @@ a {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #f4f4fd;
+        display: flex;
+        /*display: block;
+        margin: 0 auto;*/
+        max-width: 464px;
+        min-width: 464px;
+        max-height: 112px;
+        min-height: 112px;
 }
