@@ -38,10 +38,13 @@ img {
 a {
     color: #434455;
     text-decoration: none;
+    display: inline-block;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .container {
-    width: 1440px;
+    width: 1158px;
     margin-left: 15px;
     margin-right: 15px;
     margin: 0 auto;
@@ -51,9 +54,12 @@ a {
 
 .header {
     background: #fff;
+    /*display: inline-block;
+    padding-top: 24px;
+    padding-bottom: 24px;*/
 }
 
-.header .container {
+.header-container {
     display: flex;
     align-items: center;
 }
@@ -142,6 +148,8 @@ a {
 
 .main-title {
     background: #2e2f42;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .main-title-name {
@@ -196,6 +204,14 @@ a {
     overflow: hidden;
 }
 
+.features-list {
+    display: flex;
+    flex: 1;
+    gap: 24px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .features-subtitle {
     font-weight: 500;
         font-size: 20px;
@@ -230,11 +246,16 @@ a {
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
+        display: block;
+        padding-top: 120px;
+        padding-bottom: 72px;
 }
 
 .team-list {
     display: flex;
+    flex: 1;
     gap: 24px;
+    padding-bottom: 120px;
 }
 
 .team-link {
@@ -269,16 +290,22 @@ a {
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
+        display: block;
+        padding-top: 120px;
+        padding-bottom: 72px;
 }
 
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px 19px;
+    /*flex: 1;*/
+    gap: 48px 24px;
+    padding-bottom: 120px;
+    /*width: calc((100% - 24px * 2) / 3);*/
 }
 
 .portfolio-link {
-    width: calc((100% - 19px * 2) / 3);
+    width: calc((100% - 24px * 2) / 3);
 }
 
 .portfolio-subtitle {
@@ -301,6 +328,9 @@ a {
 
 .footer {
     background: #2e2f42;
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;;
 }
 
 .footer-logo {
@@ -331,8 +361,8 @@ a {
         display: flex;
         /*display: block;
         margin: 0 auto;*/
-        max-width: 464px;
-        min-width: 464px;
+        max-width: 264px;
+        min-width: 264px;
         max-height: 112px;
         min-height: 112px;
 }
