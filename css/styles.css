@@ -38,9 +38,9 @@ img {
 a {
     color: #434455;
     text-decoration: none;
-    display: inline-block;
+    /*display: inline-block;
     padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 24px;*/
 }
 
 .container {
@@ -127,6 +127,9 @@ a {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        display: inline-block;
+        padding-top: 24px;
+        padding-bottom: 24px;
 }
 
 .address-link {
@@ -136,6 +139,9 @@ a {
         letter-spacing: 0.02em;
         color: #434455;
         font-style: normal;
+        display: inline-block;
+        padding-top: 24px;
+        padding-bottom: 24px;
 }
 
 .address-list {
@@ -164,7 +170,7 @@ a {
         margin: 0 auto;
         max-width: 496px;
         /*min-width: 496px;*/
-        margin-bottom: 28px;
+        margin-bottom: 48px;
 }
 
 .main-title-button {
@@ -190,6 +196,11 @@ a {
 }
 
 /*---------------Our Features---------------*/
+
+.features-container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 .visually-hidden {
     position: absolute;
@@ -260,7 +271,9 @@ a {
 
 .team-link {
     width: calc((100% - 24px * 3) / 4);
-    padding: 0 0 120px 0;
+    /*padding: 0 0 120px 0;*/
+    border-radius: 0 0 4px 4px;
+    padding: 32px 16px;
 }
 
 .team-subtitle {
@@ -270,6 +283,8 @@ a {
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
+        /*display: flex;
+        padding: 32px 16px;*/
 }
 
 .team-text {
@@ -280,6 +295,12 @@ a {
         text-align: center;
         color: #434455;
 }
+
+
+/*.team-subtitle .team-text {
+    display: flex;
+    padding: 32px 16px;
+}*/
 
 /*---------------Our Portfolio---------------*/
 
@@ -365,4 +386,5 @@ a {
         min-width: 264px;
         max-height: 112px;
         min-height: 112px;
+        padding-top: 16px;
 }
