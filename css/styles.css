@@ -358,6 +358,17 @@ width: calc((100% - 24px * 3) / 4);
     width: calc((100% - 24px * 2) / 3);
 }
 
+.portfolio-link-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 16px;
+    gap: 8px;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    border-top: none;
+}
+
 .portfolio-subtitle {
     font-weight: 500;
         font-size: 20px;
